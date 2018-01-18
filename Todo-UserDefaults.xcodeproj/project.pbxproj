@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40F77936200CC28400BF4A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F77935200CC28400BF4A49 /* AppDelegate.swift */; };
-		40F77938200CC28400BF4A49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F77937200CC28400BF4A49 /* ViewController.swift */; };
+		40F77938200CC28400BF4A49 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F77937200CC28400BF4A49 /* TodoListViewController.swift */; };
 		40F7793B200CC28400BF4A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F77939200CC28400BF4A49 /* Main.storyboard */; };
 		40F7793D200CC28400BF4A49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F7793C200CC28400BF4A49 /* Assets.xcassets */; };
 		40F77940200CC28400BF4A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F7793E200CC28400BF4A49 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		40F77932200CC28400BF4A49 /* Todo-UserDefaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo-UserDefaults.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F77935200CC28400BF4A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40F77937200CC28400BF4A49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40F77937200CC28400BF4A49 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		40F7793A200CC28400BF4A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40F7793C200CC28400BF4A49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F7793F200CC28400BF4A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,38 @@
 		40F77934200CC28400BF4A49 /* Todo-UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				40F77935200CC28400BF4A49 /* AppDelegate.swift */,
-				40F77937200CC28400BF4A49 /* ViewController.swift */,
-				40F77939200CC28400BF4A49 /* Main.storyboard */,
-				40F7793C200CC28400BF4A49 /* Assets.xcassets */,
-				40F7793E200CC28400BF4A49 /* LaunchScreen.storyboard */,
-				40F77941200CC28400BF4A49 /* Info.plist */,
+				40F77947200CCBAD00BF4A49 /* Controllers */,
+				40F77948200CCBF800BF4A49 /* Views */,
+				40F77949200CCC0D00BF4A49 /* References */,
 			);
 			path = "Todo-UserDefaults";
+			sourceTree = "<group>";
+		};
+		40F77947200CCBAD00BF4A49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40F77937200CC28400BF4A49 /* TodoListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		40F77948200CCBF800BF4A49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40F77939200CC28400BF4A49 /* Main.storyboard */,
+				40F7793E200CC28400BF4A49 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		40F77949200CCC0D00BF4A49 /* References */ = {
+			isa = PBXGroup;
+			children = (
+				40F77935200CC28400BF4A49 /* AppDelegate.swift */,
+				40F7793C200CC28400BF4A49 /* Assets.xcassets */,
+				40F77941200CC28400BF4A49 /* Info.plist */,
+			);
+			name = References;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F77938200CC28400BF4A49 /* ViewController.swift in Sources */,
+				40F77938200CC28400BF4A49 /* TodoListViewController.swift in Sources */,
 				40F77936200CC28400BF4A49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Home.Todo-UserDefaults";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -282,6 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Home.Todo-UserDefaults";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -304,6 +330,7 @@
 				40F77946200CC28400BF4A49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
