@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		408CAFA2201621FA004E8A5E /* TodoListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 408CAFA0201621FA004E8A5E /* TodoListModel.xcdatamodeld */; };
+		40B48FC62010C96E004B5C40 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B48FC52010C96E004B5C40 /* Items.swift */; };
 		40F77936200CC28400BF4A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F77935200CC28400BF4A49 /* AppDelegate.swift */; };
 		40F77938200CC28400BF4A49 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F77937200CC28400BF4A49 /* TodoListViewController.swift */; };
 		40F7793B200CC28400BF4A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F77939200CC28400BF4A49 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		408CAFA1201621FA004E8A5E /* TodoListModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoListModel.xcdatamodel; sourceTree = "<group>"; };
+		40B48FC52010C96E004B5C40 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		40F77932200CC28400BF4A49 /* Todo-UserDefaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo-UserDefaults.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F77935200CC28400BF4A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F77937200CC28400BF4A49 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40B48FC72010CEB3004B5C40 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				408CAFA0201621FA004E8A5E /* TodoListModel.xcdatamodeld */,
+				40B48FC52010C96E004B5C40 /* Items.swift */,
+			);
+			name = DataModel;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		40F77929200CC28400BF4A49 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +70,7 @@
 			children = (
 				40F77947200CCBAD00BF4A49 /* Controllers */,
 				40F77948200CCBF800BF4A49 /* Views */,
+				40B48FC72010CEB3004B5C40 /* DataModel */,
 				40F77949200CCC0D00BF4A49 /* References */,
 			);
 			path = "Todo-UserDefaults";
@@ -115,7 +130,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Ahmad Issa";
 				TargetAttributes = {
 					40F77931200CC28400BF4A49 = {
@@ -162,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F77938200CC28400BF4A49 /* TodoListViewController.swift in Sources */,
+				408CAFA2201621FA004E8A5E /* TodoListModel.xcdatamodeld in Sources */,
 				40F77936200CC28400BF4A49 /* AppDelegate.swift in Sources */,
+				40B48FC62010C96E004B5C40 /* Items.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +215,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -206,7 +225,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -249,7 +272,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -257,7 +282,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -292,7 +321,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Home.Todo-UserDefaults";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -306,7 +335,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Home.Todo-UserDefaults";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -333,6 +362,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		408CAFA0201621FA004E8A5E /* TodoListModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				408CAFA1201621FA004E8A5E /* TodoListModel.xcdatamodel */,
+			);
+			currentVersion = 408CAFA1201621FA004E8A5E /* TodoListModel.xcdatamodel */;
+			path = TodoListModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 40F7792A200CC28400BF4A49 /* Project object */;
 }
